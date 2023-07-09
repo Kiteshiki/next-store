@@ -3,6 +3,7 @@ import { ApolloServerPluginLandingPageGraphQLPlayground } from "apollo-server-co
 import { MicroRequest } from "apollo-server-micro/dist/types";
 import { ServerResponse, IncomingMessage } from "http";
 import { PrismaClient } from "@prisma/client";
+import { createContext } from '../../graphql/context'
 
 const prisma = new PrismaClient();
 
